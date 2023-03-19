@@ -1,0 +1,27 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP (Hypertext Transfer Protocol) is a communication protocol that enables web browsers and web servers to exchange information over the internet. HTTP1.1 and HTTP2 are two different versions of this protocol, each with its own set of features and advantages. In this blog post, we will explore the differences between HTTP1.1 and HTTP2.
+
+Request and Response Multiplexing
+One of the biggest differences between HTTP1.1 and HTTP2 is in their approach to request and response multiplexing. In HTTP1.1, only one request can be sent at a time on a single connection. The server must respond to each request before the next one can be sent. This results in slower page load times, especially when a webpage contains many resources that need to be loaded.
+
+In contrast, HTTP2 enables request and response multiplexing, which means that multiple requests and responses can be sent simultaneously on a single connection. This improves page load times and reduces latency, resulting in a faster and smoother browsing experience.
+
+Header Compression
+Another difference between HTTP1.1 and HTTP2 is in their approach to header compression. In HTTP1.1, headers are sent as plain text with each request and response, even if they are identical to the headers sent in a previous request or response. This results in unnecessary data transfer and increased latency.
+
+In contrast, HTTP2 uses header compression, which reduces the size of headers by compressing them before sending them over the network. This results in a reduction in data transfer and improved page load times.
+
+Server Push
+HTTP2 also introduces a new feature called server push, which allows the server to push resources to the client's cache without waiting for a request. This feature can significantly improve page load times by anticipating the client's needs and preloading resources before they are requested.
+
+In contrast, HTTP1.1 requires the client to send a request for each resource, resulting in additional network overhead and increased page load times.
+
+Security
+Finally, HTTP2 mandates the use of SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption for all connections, whereas HTTP1.1 does not. This means that HTTP2 connections are more secure and less susceptible to attacks such as man-in-the-middle attacks.
+
+2. Write a blog about objects and its internal representation in Javascript
+
+JavaScript objects are implemented as a collection of properties, where each property is represented by a key-value pair. The keys are always strings, while the values can be any valid JavaScript data type, including other objects.Internally, JavaScript objects are represented as dictionaries, where the keys are the property names and the values are the corresponding property values. In other words, each object in JavaScript is essentially a collection of named values.
+
+When an object is created in JavaScript, the engine creates a new dictionary to represent the object's properties. The dictionary is stored in memory and is associated with the object. When a property is added or deleted from the object, the engine updates the corresponding entry in the dictionary.
