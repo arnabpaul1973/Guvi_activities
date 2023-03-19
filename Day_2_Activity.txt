@@ -1,0 +1,9 @@
+1. write a blog on the difference between document and window object
+
+Differences between Document and Window Object:
+
+ 1. Scope: The Document object has a limited scope and is accessible only within the current document. On the other hand, the Window object has a global scope and is accessible across all the frames and documents within the same window.
+
+ 2. Methods and Properties: While both the Document and Window objects have some common properties and methods, there are some differences between them. The Document object provides methods and properties to access and manipulate the elements and their content on the page, whereas the Window object provides methods and properties to control the behavior of the browser window and handle events.
+
+ 3. Creation: The Document object is created when the page is loaded and is always available as long as the page is open. On the other hand, the Window object is created when the browser window or tab is opened and is destroyed when the window is closed.
